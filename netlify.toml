@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  CI = "false" # Prevents the build from failing or hanging due to ESLint warnings
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
